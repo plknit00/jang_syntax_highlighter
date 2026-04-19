@@ -1,0 +1,25 @@
+{
+  "name": "jang-syntax-highlighter",
+  "displayName": "jang-syntax-highlighter",
+  "description": "Syntax highlighter for jang",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.116.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "jang",
+      "aliases": ["jang", "jang"],
+      "extensions": [".jang"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "jang",
+      "scopeName": "source.jang",
+      "path": "./syntaxes/jang.tmLanguage.json"
+    }]
+  }
+}
