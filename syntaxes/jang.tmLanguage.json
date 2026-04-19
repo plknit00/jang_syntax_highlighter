@@ -7,13 +7,25 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#bools"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.jang",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(if|else|while|for|fn|ret|loop|mut|let)\\b"
 			}]
 		},
 		"strings": {
@@ -26,6 +38,34 @@
 					"match": "\\\\."
 				}
 			]
+		},
+		"comments": {
+			"name": "comment.jang",
+			"begin": "//",
+			"end": "\n"
+		},
+		"numbers": {
+			"name": "number.jang",
+			"begin": "//",
+			"end": "\n",
+			"patterns": [
+				{
+					"name": "constant.character.escape.jang",
+					"match": "\\//\\."
+				}
+			]
+		},
+		"types": {
+			"patterns": [{
+				"name": "keyword.control.jang",
+				"match": "\\b(i32|f32|i64|f64|bool)\\b"
+			}]
+		},
+		"bools": {
+			"patterns": [{
+				"name": "bool.jang",
+				"match": "\\b(true|false)\\b"
+			}]
 		}
 	},
 	"scopeName": "source.jang"

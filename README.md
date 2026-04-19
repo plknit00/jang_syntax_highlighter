@@ -2,6 +2,10 @@
 
 This is the README for your extension "jang-syntax-highlighter". After writing up a brief description, we recommend including the following sections.
 
+## Important links
+1. [VS Code Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#_tokenization)
+2. [VS Code Your First Extention](https://code.visualstudio.com/api/get-started/your-first-extension)
+
 ## Features
 
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
