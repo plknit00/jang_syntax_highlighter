@@ -1,4 +1,4 @@
-# jang-syntax-highlighter README
+# Jang Syntax Highlighter README
 
 This is the README for your extension "jang-syntax-highlighter". After writing up a brief description, we recommend including the following sections.
 
