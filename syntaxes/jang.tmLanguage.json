@@ -20,12 +20,20 @@
 		{
 			"include": "#bools"
 		}
+		,
+		{
+			"include": "#variables"
+		}
+		,
+		{
+			"include": "#functions"
+		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.jang",
-				"match": "\\b(if|else|while|for|fn|ret|loop|mut|let)\\b"
+				"match": "\\b(if|else|while|for|loop|fn|ret|mut|let)\\b"
 			}]
 		},
 		"strings": {
@@ -45,27 +53,28 @@
 			"end": "\n"
 		},
 		"numbers": {
-			"name": "number.jang",
-			"begin": "//",
-			"end": "\n",
-			"patterns": [
-				{
-					"name": "constant.character.escape.jang",
-					"match": "\\//\\."
-				}
-			]
+			"name": "constant.numeric.jang",
+			"match": "\\b\\d+(\\.\\d+)?\\b"
 		},
 		"types": {
 			"patterns": [{
-				"name": "keyword.control.jang",
+				"name": "storage.type.jang",
 				"match": "\\b(i32|f32|i64|f64|bool)\\b"
 			}]
 		},
 		"bools": {
 			"patterns": [{
-				"name": "bool.jang",
+				"name": "constant.language.boolean.jang",
 				"match": "\\b(true|false)\\b"
 			}]
+		},
+		"variables": {
+			"name": ".jang",
+			"match": "\\b\\s+(\\.\\d+)?\\b"
+		},
+		"functions": {
+			"name": "entity.name.function.jang",
+			"end": "("
 		}
 	},
 	"scopeName": "source.jang"
